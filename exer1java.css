@@ -1,0 +1,27 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+#main-container {
+  background-color: #f29484;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+button {
+  background: transparent;
+  border: 2px solid white;
+  padding: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+button:focus {
+  outline: none;
+}
