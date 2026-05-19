@@ -1,26 +1,49 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-      p {
-        color: blue;
-      }
+        p {
+            color: blue;
+            /* font-size: 18px; */
+        }
+
+        h1 {
+            color: green;
+        }
     </style>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body onload='alert("Salut Javascript")'>
+
+    <h1 id="titlu">Javascript</h1>
     <script>
-      alert('Mesaj din head');
-      alert('Mesaj 2 din head');
+        /* alert('Mesaj din head');
+        alert('Mesaj 2 din head'); */
+        document.write('<h1 style="color: red;">Cod generat din Javascript 3 </h1>');
     </script>
-  </head>
-  <body onload="alert('Salut Javascript')">
-    <h1>Introducere in JavaScript</h1>
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, qui
-      debitis enim sint laboriosam maxime itaque ea quos nam quidem molestiae
-      natus laudantium error modi perspiciatis magni pariatur. Architecto,
-      veritatis!
+    <p id="demo">Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Laborum molestiae corporis explicabo
+        aut dolorum, fugiat odit at nobis amet autem! Rem molestiae illum quo
+        quibusdam facere voluptates quidem quasi numquam?
     </p>
-  </body>
+
+    <script>
+        /* alert('Mesaj din head');
+        alert('Mesaj 2 din head'); */
+        document.write('<h1>Cod generat din Javascript </h1>');
+
+    </script>
+    <script>
+        document.getElementById("titlu").innerHTML = "Modificat din Javascript";
+        document.getElementById("demo").style.color = "red";
+
+    </script>
+</body>
+
 </html>

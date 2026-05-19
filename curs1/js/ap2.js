@@ -1,1 +1,1 @@
-alert('Salut din fisier exter');
+alert('Salut din fisier extern');

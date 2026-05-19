@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //let animale = ["Pisica", "Caine", "Papagal", "Hamster", "Iepure", "Arici"];
+        var pets = new Array();
+        pets[0] = "Pisica";
+        pets[1] = "Caine";
+        pets[2] = "Papagal";
+        pets[3] = "Hamster";
+        pets[4] = "Iepure";
+        pets[5] = "Arici";
+        document.write("Valorile memorate in tablou sunt:" + "<br/>");
+        document.write(pets[3] + "<br />");
+        for (let x in pets) {
+            document.write(x + "<br />");
+            document.write(pets[x] + "<br />");
+        }
+
+        for (let x of pets) { document.write(x + "<br />"); }
+        document.write("Valorile memorate in tablou sunt cu foreach:" + "<br/>");
+        pets.forEach(function (item, index, array) {
+            document.write(array + "<br />");
+        });
+
+
+    </script>
+</body>
+
+</html>
